@@ -10,7 +10,7 @@ arrow.addEventListener("click", function () {
 });
 
 explore.addEventListener("click", function () {
-  window.scrollTo(0, 831.2000122070312);
+  window.scrollTo(0, 801.5999755859375);
 });
 
 btnReset.addEventListener("click", function () {

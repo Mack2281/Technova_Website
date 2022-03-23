@@ -2,6 +2,96 @@ body {
   animation: pageLoad 0.75s;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 3% 5%;
+  background-color: white;
+}
+
+.collapse {
+  text-align: right;
+}
+
+nav h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin: auto 0;
+  cursor: pointer;
+}
+nav h3 a {
+  text-decoration: none;
+  color: #00b4d8;
+}
+
+nav h3 a:hover {
+  color: #00b4d8;
+}
+nav ul {
+  list-style: none;
+  margin: auto 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: #7d7987;
+}
+
+.underline:hover {
+  color: #ff00d6;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff00d6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+  transition: 0.3s ease-in-out;
+}
+
+.highlight {
+  color: #90e0ef;
+  text-decoration: underline;
+}
+
+.highlight:hover {
+  color: #90e0ef;
+}
+.btn-explore {
+  background: linear-gradient(#01d1db, #00add8);
+  padding: 10px 30px;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.btn-explore:hover {
+  background: linear-gradient(#01d1db, #41bdda);
+  transition: 0.4s ease-in-out;
+}
 @keyframes pageLoad {
   from {
     transform: translateY(-10px);
@@ -12,4 +102,34 @@ body {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+footer {
+  padding: 40px 80px;
+  background-color: #00a5d0;
+  display: block;
+  color: white;
+  position: relative;
+}
+.footer h4 {
+  font-size: 2rem;
+}
+
+.contact {
+  text-align: right;
+}
+.copyright {
+  position: absolute;
+  display: inline;
+}
+
+.down {
+  transform: translate(0%, 0%);
+  transition: transform 1s ease-in-out;
+}
+
+.down:hover {
+  transform: translate(0%, 10%);
+  transition: transform 1s ease-in-out;
+  position: relative;
 }

@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <script src="https://use.fontawesome.com/5c26058745.js"></script>
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
+  <script src="alert/dist/sweetalert-dev.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="alert/dist/sweetalert.css">
+  
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="/master.css" />
+    <link rel="stylesheet" href="master.css" />
     <title>Technova Website</title>
   </head>
   <body>
@@ -40,13 +46,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="" href="/Achievments/achievements.html">Achievements</a>
+                  <a class="underline" href="/Achievments/achievements.html">Achievements</a>
                 </li>
                 <li class="nav-item">
-                  <a class="" href="/Members/members.html">Members</a>
+                  <a class="underline" href="/Members/members.html">Members</a>
                 </li>
                 <li class="nav-item">
-                  <a class="" href="/Events/event.html">Events</a>
+                  <a class="underline" href="/Events/event.html">Events</a>
                 </li>
               </ul>
             </div>
@@ -54,7 +60,7 @@
           </nav>
   </header>
     <section class="title-page">
-      <img class="dots" src="/images/dots.png" alt="">
+      <img class="blur-dots dots" src="/images/dots.png" alt="">
       <div class="container-title-page container-fluid">
         <div class="title-row row">
           <div
@@ -79,12 +85,12 @@
           </div>
         </div>
       </div>
-      <img src="/images/dots.png" alt="" class="dots-img-2">
+      <img  src="/images/dots.png" alt="" class=" blur-dots dots-img-2">
     </section>
 
     <!-- Mission and  Vision -->
     <section class="intro" id="intro">
-      <img src="/images/dots.png" alt="" class="dots-intro">
+      <img src="/images/dots.png" alt="" class="blur-dots dots-intro">
       <div class="container-fluid">
         <div class="intro-row row">
           <div class="col-lg-12 col-md-12 col-sm-12 intro-content">
@@ -113,20 +119,23 @@
               students’ network, we strive to excel in this all-time mission
               of the technical society.
             </p>
-            <a class="arrow-down-1" href="#technova"
+            <div class="arrow-down-container">
+              <a class="arrow-down-2" href="#technova"
               ><img
+                class="arrow-down-img"
                 src="/images/akar-icons_circle-triangle-down-fill.png"
                 alt=""
             /></a>
+            </div>
           </div>
         </div>
       </div>
-      <img src="/images/dots.png" alt="" class="dots-intro-2">
+      <img src="/images/dots.png" alt="" class="blur-dots dots-intro-2">
     </section>
 
     <!-- TechNova -->
     <section class="technova" id="technova">
-      <img class="dots-technova" src="/images/dots.png" alt="">
+      <img class="blur-dots dots-technova" src="/images/dots.png" alt="">
       <div class="container-fluid p-0 blob-img">
             <div class="container">
                 <div class="row banner">
@@ -156,25 +165,25 @@
                               student community with their ability for invention,
                               resourcefulness and ultimately innovation.</p>
                             <ul class="listing-container">
-                                <li><img src="/img/circle.png" alt="" />Lorem Ipsum is simply dummy text</li>
-                                <li><img src="/img/circle.png" alt="" />Lorem Ipsum is simply dummy text</li>
-                                <li><img src="/img/circle.png" alt="" />Lorem Ipsum is simply dummy text</li>
-                                <li><img src="/img/circle.png" alt="" />Lorem Ipsum is simply dummy text</li>
-                                <li><img src="/img/circle.png" alt="" />Lorem Ipsum is simply dummy text</li>
-                                <li><img src="/img/circle.png" alt="" />Lorem Ipsum is simply dummy text</li>
+                                <li><img src="/img/circle.png" alt="" />Conducts Tech fests /events/workshops</li>
+                                <li><img src="/img/circle.png" alt="" />On demand mentoring and assistance by experts</li>
+                                <li><img src="/img/circle.png" alt="" />Cultivating Innovation and Ideas</li>
+                                <li><img src="/img/circle.png" alt="" />Platform for budding entrepreneurs</li>
+                                <li><img src="/img/circle.png" alt="" />Real world projects and hands on experience</li>
+                                <li><img src="/img/circle.png" alt="" />Alumni Networking to springboard your career</li>
                                 <ul>
                         </div>
                     </div>
                     <img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-1" >
                     <div class="col-md-6 phone-mockup ">
                         <figure class="image-container">
-                            <img class="up" src="/img/dummy.png" alt="dummy" />
+                            <img class="down" src="/img/dummy.png" alt="dummy" />
                         </figure>
                       </div>
                     </div>
                   </div>
                 </div>
-                <img src="/images/dots.png" alt="" class="dots-intro-2">
+                <img src="/images/dots.png" alt="" class="blur-dots dots-intro-2">
     </section>
 <!-- flowchart -->
     <section class="flowchart" id="flowchart">
@@ -182,7 +191,7 @@
       <div class="row">
         <div class="col-lg-12 md-12 sm-12">
         <div class="images">
-          <img class="dots" src="/images/dots.png" alt="">
+          <img class="blur-dots dots" src="/images/dots.png" alt="">
         <img class="flowchart-image-2 img-fluid" src="/images/Technova.png" alt="" />
         <img
           class="flowchart-image-1"
@@ -225,7 +234,7 @@
             alt=""
         /></a>
     </div>
-    <img src="/images/dots.png" alt="" class="flowchart-dots">
+    <img src="/images/dots.png" alt="" class="blur-dots flowchart-dots">
   </div>
   </div>
   </div>
@@ -235,7 +244,7 @@
     <!-- entrepreneurs club -->
 
     <section class="entrepreneurs" id="entrepreneurs">
-      <img class="entrepreneurs-dots" src="/images/dots.png" alt="">
+      <img class="blur-dots entrepreneurs-dots" src="/images/dots.png" alt="">
       <div class="container-fluid">
         <div class="entrepreneurs-row row">
 
@@ -274,7 +283,7 @@
             <div class="clubs-arrow"><a href="#git-hub"><img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-2" ></a></div>
           </div>
         </div>
-        <img src="/images/dots.png" alt="" class="dots-entrepreneurs-2">
+        <img src="/images/dots.png" alt="" class="blur-dots dots-entrepreneurs-2">
     </section>
 
     <!-- GitHub Club -->
@@ -306,13 +315,13 @@
                </div>
                <div class="join">
                <button class="btn-join"> <img src="/images/fluent_people-add-16-filled.png" alt=""> Join Here</button>
-               <button class="btn-join"><img src="/images/mdi_login.png" alt=""><a href="https://githubclub.social/" target="_blank">Visit Website</a> </button>
+               <button class="btn-join"><img src="/images/mdi_login.png" alt=""> Visit Website</button>
            </div>
             </div>
             <div class="clubs-arrow"><a href="#gdsc"><img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-2" ></a></div>
           </div>
         </div>
-        <img src="/images/dots.png" alt="" class="dots-git-hub-2">
+        <img src="/images/dots.png" alt="" class="blur-dots dots-git-hub-2">
     </section>
 
     <!-- Google Develeper club  -->
@@ -353,7 +362,7 @@
             <div class="clubs-arrow"><a href="#game-drifters"><img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-2" ></a></div>
           </div>
         </div>
-        <img src="/images/dots.png" alt="" class="dots-gdsc-hub-2">
+        <img src="/images/dots.png" alt="" class="blur-dots dots-gdsc-hub-2">
     </section>
 
     <!-- Game Drifters  -->
@@ -396,7 +405,7 @@
             <div class="clubs-arrow"><a href="#data-pool"><img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-2" ></a></div>
           </div>
         </div>
-        <img src="/images/dots.png" alt="" class="dots-game-drifters-2">
+        <img src="/images/dots.png" alt="" class="blur-dots dots-game-drifters-2">
     </section>
 
     <!-- Data Pool Club  -->
@@ -431,14 +440,14 @@
           </div>
           <div class="col-lg-6 col-md-12 col-sm-12">
             <img
-              class="img-gdsc down"
-              src="/images/—Pngtree—25d business technology computer finance_5780233 1.png"
+              class="img-data-pool down"
+              src="/images/Group 5 (1).png"
             />
           </div>
           <div class="clubs-arrow"><a href="#cyber-pirates"><img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-2" ></a></div>
         </div>
       </div>
-      <img src="/images/dots.png" alt="" class="dots-gdsc-hub-2">
+      <img src="/images/dots.png" alt="" class="blur-dots dots-gdsc-hub-2">
   </section>
 
 
@@ -482,7 +491,7 @@
         <div class="clubs-arrow"><a href="#tech-hub"><img src="/images/akar-icons_circle-triangle-down-fill.png" alt="video" class="video-img-2" ></a></div>
       </div>
     </div>
-    <img src="/images/dots.png" alt="" class="dots-game-drifters-2">
+    <img src="/images/dots.png" alt="" class="blur-dots dots-game-drifters-2">
     </section>
 
     <!-- TechHub Club  -->
@@ -544,7 +553,7 @@
                         <img src="/images/Form_img/fluent_mail-24-filled.png" />
                         <figcaption>Sharda mail</figcaption>
                     </figure>
-                    <input type="email" class="form-control" id="mail" placeholder="Enter your email address">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
                     <span id="mailErr"></span>
                 </li>
                 <li class="form-group">
@@ -552,7 +561,7 @@
                         <img src="/images/Form_img/icon-park-outline_degree-hat.png" />
                         <figcaption>Programme</figcaption>
                     </figure>
-                    <input type="text" class="form-control" id="programme" placeholder="B.Tech, B.Sc ">
+                    <input type="text" class="form-control" id="program" placeholder="B.Tech, B.Sc ">
                     <span id="programmeErr"></span>
                 </li>
                 <li class="form-group">
@@ -604,8 +613,8 @@
       <div class="contact">
         <h4>Contact Here For Queries: </h4>
         <br>
-        <p> +91 88829238383 </p>
-        <p> +91 88829238383 </p>
+        <p> +91-8873641005 </p>
+        <p> +91-9771347815</p>
         
       </div>
       <p class="copyright">&copy; 2022-2023 All Rights Reserved</p>
@@ -615,5 +624,103 @@
 
   </body>
   <script src="script.js"></script>
-  <script src="form.js"></script>
+  <script type="text/javascript">
+
+
+
+
+
+    const reset = () => {
+      $("#tabform")[0].reset();
+    };
+    
+    
+    function submit() {
+    
+    
+    console.log("ok");
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var filter = /^[0-9-+]+$/;
+    
+    
+    
+    if ($("#name").val().trim() == "") {
+        $("#nameErr").html("please enter required field");
+    
+        return false;
+    }
+    if ($("#email").val().trim() == "") {
+        $("#mailErr").html("please enter required field")
+        return false;
+    }
+    if ($("#email").val().trim() == "") {
+        $("#mailErr").html("please enter required field")
+        return false;
+    }
+    if (reg.test($("#email").val().trim()) == "") {
+        $("#mailErr").html("Email address is invalid");
+      
+        return false;
+    }
+    
+    if ($("#program").val().trim() == "") {
+    
+        $("#programmeErr").html("please enter required field")
+        return false;
+    }
+    if ($("#branch").val().trim() == "") {
+        $("#branchErr").html("please enter required field")
+        return false;
+    }
+    if ($("#semester").val().trim() == "") {
+        $("#semesterErr").html("please enter required field")
+        return false;
+    }
+    if ($("#number").val().trim() == "") {
+        $("#numberErr").html("please enter required field")
+        return false;
+    }
+    
+    
+    
+    swal({
+      title: "congratulations!",
+      text: "You have sucessfully registered",
+      icon: "success",
+    });
+    
+            $.ajax({
+                type: 'POST',
+               
+                url: 'config.php',
+                data: {
+                  
+            
+                    name: $("#name").val(),
+                    email: $("#email").val(),
+                    semester:$("#semester").val(),
+                    branch:$("#branch").val(),
+                    program:$("#program").val(),
+                   
+                    number:$("#number").val(),
+                },
+                dataType: 'json',
+                success: function(data, status, xhr) {
+               
+                    console.log('status: ' + status + ', data: ' + ":" + data + ":");
+                    if (status == "success") {
+                        console.log("sucess");
+    
+                      
+                    } else {
+                        alert("Upload Failed");
+                    }
+                },
+                error: function(jqXhr, textStatus, errorMessage) {
+                 
+                    console.log('Error' + errorMessage);
+                }
+            });
+        }
+      </script>
 </html>

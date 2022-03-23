@@ -1,45 +1,43 @@
 const reset = () => {
   $("#tabform")[0].reset();
 };
-
-console.log("HI");
 const submit = () => {
   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
   var filter = /^[0-9-+]+$/;
 
   if ($("#name").val().trim() == "") {
-    $("#nameErr").html("Please enter required field!");
+    $("#nameErr").html("please enter required field");
 
     return false;
   }
-  if ($("#mail").val().trim() == "") {
-    $("#mailErr").html("Please enter required field!");
+  if ($("#email").val().trim() == "") {
+    $("#mailErr").html("please enter required field");
     return false;
   }
-  if ($("#mail").val().trim() == "") {
-    $("#mailErr").html("Please enter required field!");
+  if ($("#email").val().trim() == "") {
+    $("#mailErr").html("please enter required field");
     return false;
   }
-  if (reg.test($("#mail").val().trim()) == "") {
+  if (reg.test($("#email").val().trim()) == "") {
     $("#mailErr").html("Email address is invalid");
     // $("#email").addClass('form-error-input');
     return false;
   }
 
-  if ($("#programme").val().trim() == "") {
-    $("#programmeErr").html("Please enter required field!");
+  if ($("#program").val().trim() == "") {
+    $("#programmeErr").html("please enter required field");
     return false;
   }
   if ($("#branch").val().trim() == "") {
-    $("#branchErr").html("please enter required field!");
+    $("#branchErr").html("please enter required field");
     return false;
   }
   if ($("#semester").val().trim() == "") {
-    $("#semesterErr").html("Please enter required field!");
+    $("#semesterErr").html("please enter required field");
     return false;
   }
   if ($("#number").val().trim() == "") {
-    $("#numberErr").html("Please enter required field!");
+    $("#numberErr").html("please enter required field");
     return false;
   }
   // if (filter.test($("#number").val().trim()) ) {
@@ -48,7 +46,7 @@ const submit = () => {
   //       return false;
   //   }
   if ($("#interests").val().trim() == "") {
-    $("#interestErr").html("Please enter required field!");
+    $("#interestErr").html("please enter required field");
     return false;
   }
   return true;

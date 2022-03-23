@@ -8,88 +8,9 @@ body {
   font-family: "Mulish", sans-serif;
 }
 /* Header section  */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding: 3% 5%;
-  background-color: white;
-}
-
-.collapse {
-  text-align: right;
-}
-.nav-item {
-  margin-top: 20px;
-}
-
-nav h3 {
-  font-weight: 700;
-  font-size: 1rem;
-  margin: auto 0;
-  cursor: pointer;
-}
-nav h3 a {
-  text-decoration: none;
-  color: #00b4d8;
-}
-
-nav h3 a:hover {
-  color: #00b4d8;
-}
-nav ul {
-  list-style: none;
-  margin: auto 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 15px;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0 10px;
-}
-
-nav ul li a {
-  position: relative;
-  text-decoration: none;
-  color: #7d7987;
-}
-
-.underline:hover {
-  color: #90e0ef;
-}
-
-.underline::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #90e0ef;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.underline:hover::before {
-  transform: scaleX(1);
-  transition: 0.3s ease-in-out;
-}
-
-.highlight {
-  color: #90e0ef;
-  text-decoration: underline;
-}
-
-.highlight:hover {
-  color: #90e0ef;
-}
 
 .achievements {
-  padding: 2% 8%;
+  padding: 2% 6%;
   position: relative;
   height: 100vh;
 }
@@ -111,22 +32,27 @@ nav ul li a {
 .description {
   margin-top: 20px;
   color: #7d7987;
-  margin-bottom: 70px;
-  max-width: 90%;
+  margin-bottom: 10px;
+  max-width: 100%;
   text-align: justify;
+  font-size: 1rem;
+}
+
+.achievements ul {
+  padding: 0 2%;
+}
+
+.achievements ul li {
+  list-style-type: disc;
+  color: #7d7987;
+  font-size: 0.9rem;
+  width: 90%;
+  text-align: justify;
+  margin: 10px 0;
 }
 
 .btn-container {
   max-width: 50%;
-}
-
-.btn-explore {
-  background: linear-gradient(#01d1db, #00add8);
-  padding: 10px 30px;
-  color: white;
-  border-radius: 7px;
-  cursor: pointer;
-  border: 0;
 }
 
 .btn-explore a {
@@ -164,11 +90,21 @@ nav ul li a {
   max-width: 85%;
   margin-top: 50px;
 }
-
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+  filter: invert(100%);
+}
 .achievement-list {
   text-align: center;
   height: 100vh;
-  padding: 5% 0;
+  padding: 2% 0;
+}
+.carousel-item {
+  padding: 2% 30%;
+}
+.carousel-img {
+  width: 100%;
+  margin: 10px;
 }
 
 .achievements-heading {
@@ -181,16 +117,109 @@ nav ul li a {
   max-height: 75px;
 }
 
-.down:hover {
-  animation: animate 2s alternate infinite;
+/* Slider  */
+
+/* START OF SLIDER STYLES */
+:root::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.slider {
+  width: 100%;
   position: relative;
 }
 
-@keyframes animate {
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: 50px;
-  }
+.pagination {
+  list-style: none;
 }
+
+.slides {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+  overflow-x: scroll;
+  overflow-y: clip;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+}
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  scroll-margin-block-start: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.slide img {
+  width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.slideText {
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slideHeading {
+  line-height: 1.4;
+}
+.slideTagline {
+  line-height: 1.6;
+}
+
+.slideNav {
+  min-width: 1rem;
+  min-height: 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.slideNav svg {
+  width: 1.4rem;
+  height: auto;
+}
+.prev-slide {
+  left: 0;
+}
+.next-slide {
+  right: 0;
+}
+
+.pagination {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pagination a {
+  text-decoration: none;
+}
+.slideBtn {
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+/* END OF SLIDER STYLES */
+
+/* CUSTOMIZING OPTIONS: Add Slides, Delete Slides, Settings */
+/* SPACING/SIZING OPTIONS NOT INCLUDED: You may edit Margins/Padding/Line-Height/Letter-Spacing/Font-Size in the rulesets above */
+/* Maybe fork it and add spacing/sizing options? */
