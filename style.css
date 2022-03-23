@@ -591,6 +591,12 @@ figcaption {
   transition: 0.4s ease-in-out;
 }
 
+.btn-join a{
+  color: #409db5;
+  text-decoration: none;
+}
+
+
 .btn-join:hover {
   background-color: #eee;
   transition: 0.4s ease-in-out;
